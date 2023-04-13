@@ -7,8 +7,9 @@ export default function NoteLists({
   handleNoteChange,
   handleDeleteNote,
 }) {
-  const nList = note.map((note) => (
+  const nList = note.map((note, index) => (
     <Notes
+      key={index}
       id={note.id}
       text={note.text}
       date={note.date}
